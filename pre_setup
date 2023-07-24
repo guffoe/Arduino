@@ -1,0 +1,50 @@
+##############################
+  setup adruino esp8266
+##############################
+
+Pre-Environment Software
+------------------------
+1. Install arduino-ide_2.1.1_Linux_64bit download at https://www.arduino.cc/en/software
+2. Go to BOARD MANAGER > install esp8266
+3. Go to LIBRARY MANAGER > install arduinojson
+4. Select port > Tools > port 3
+5. Go to LIBRARY MANAGER > install CTbot
+6.
+
+Setup telegram
+---------------
+1. Register new telegram to get new ID
+2. Go to BotFather to make new token. Follow the instruction.
+3, Save your token & id
+
+
+
+NodeMCU 1.0 ESP8266
+-------------------
+1. Assign Api 12 //GPIO12 (D6)
+2. Assign Gas 14 //GPIO14 (D5)
+3. buzzerPin 15 //GPIO15 (D8)
+
+Flame Sensor MYP-KEY-037
+------------------------
+ESP8266     Sensor API
+5v(vv)      VCC
+GND         GND
+D6          DO
+
+
+MQ2 Gas/Smoke Sensor MYP-JHS-289
+--------------------------------
+ESP8266     MQ2
+5v(vv)      VCC
+GND         GND
+D5          DO
+
+3.5 PIEZO Buzzer
+----------------
+ESP8266     Buzzer
+D8          -
+GND         +
+
+
+Script .ino patch at https://github.com/guffoe/Arduino/blob/master/sketch_jul17a.ino
